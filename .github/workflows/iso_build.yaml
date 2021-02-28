@@ -141,6 +141,8 @@ jobs:
               sudo make SYSCONFDIR=/etc PREFIX=/usr install_base
               sudo make SYSCONFDIR=/etc PREFIX=/usr install_yaml
               sudo make SYSCONFDIR=/etc PREFIX=/usr install_iso
+              # add repo [kde-unstable]
+              sudo sed -i -e 's/\[core\]/\[kde-unstable\]\nSigLevel = PackageRequired\nInclude = \/etc\/pacman\.d\/mirrorlist\n\n\[core\]/' /usr/share/manjaro-tools/pacman-default.conf
           }
           
           install_mjr_tools
