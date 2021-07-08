@@ -5,7 +5,7 @@ on:
     - cron:  '0 3 * * *'
 
 jobs:
-  prepare_release:
+  prepare-release:
     runs-on: ubuntu-20.04
     steps:
       - uses: styfle/cancel-workflow-action@0.8.0
