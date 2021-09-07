@@ -32,14 +32,15 @@ jobs:
         with:
           access_token: ${{ github.token }}
       - id: image-build
-        uses: manjaro/manjaro-iso-action@v2
+        uses: manjaro/manjaro-iso-action@feat/custom-repos
         with:
           edition: ${{ matrix.edition }}
           branch: ${{ matrix.branch }}
           scope: ${{ matrix.scope }}
-          version: "21.0"
-          kernel: linux510
-          code-name: "Ornara"
+          version: "21.1.2"
+          kernel: linux513
+          code-name: "Pahvo"
+          custom-repo: "kde-unstable"
           release-tag: ${{ needs.prepare-release.outputs.release_tag }}
       - name: rollback
         if: ${{ failure() || cancelled() }}
