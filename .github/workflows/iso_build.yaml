@@ -37,9 +37,9 @@ jobs:
           edition: ${{ matrix.edition }}
           branch: ${{ matrix.branch }}
           scope: ${{ matrix.scope }}
-          version: "21.1.3"
-          kernel: linux513
-          code-name: "Pahvo"
+          version: "21.2"
+          kernel: linux515
+          code-name: "Qonos"
           custom-repo: "kde-unstable"
           release-tag: ${{ needs.prepare-release.outputs.release_tag }}
       - name: rollback
