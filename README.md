@@ -1,24 +1,24 @@
 # Plasma Daily Builds
 [![iso_build](https://github.com/manjaro/plasma-daily/workflows/iso_build/badge.svg)](https://github.com/manjaro/plasma-daily/actions)
 
-## description
+## Description
 
-Daily Plasma development builds based on Manjarolinux \[kde-unstable\] repo
+Daily Plasma development builds based on Manjarolinux \[kde-unstable\] repo.
 
-## where can I download an iso?
+## Where can I download an iso?
 
-Images can be found at [github releases](https://github.com/manjaro/plasma-daily/releases)
+Images can be found at [github releases](https://github.com/manjaro/plasma-daily/releases).
 
-## sources
+## Sources
 
 - [iso profile](https://gitlab.manjaro.org/profiles-and-settings/iso-profiles/-/tree/master/manjaro/kde-dev)
 
-## building
+## Building
 
-1. check out the iso profile
+1. Check out the iso profile
 2. `buildiso -p kde-dev -b unstable`
 
-## credentials
+## Credentials
 
 ```
 user: manjaro
