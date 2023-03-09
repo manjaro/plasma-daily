@@ -38,7 +38,7 @@ jobs:
           branch: ${{ matrix.branch }}
           scope: ${{ matrix.scope }}
           version: "22.0"
-          kernel: linux60
+          kernel: linux61
           code-name: "Sikaris"
           custom-repo: "kde-unstable"
           build-mirror: ${{ secrets.BUILD_MIRROR }}
